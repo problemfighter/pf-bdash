@@ -1,0 +1,11 @@
+.auth-max-w-fixed {
+    max-width: 450px
+}
+.pf-fs-72{
+    font-size: 72px;
+}
+@media (max-width: 767px) {
+    .footer-item{
+        font-size: 12px;
+    }
+}
