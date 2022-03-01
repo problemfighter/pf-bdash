@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PFBDash Login</title>
     <link rel="stylesheet" href="assets/css/libs/bootstrap.min.5.0.2.css">
+    <link rel="stylesheet" href="assets/css/auth.css">
 </head>
 
-<body class="h-100 d-flex align-items-center">
-<main class="w-100 p-2 m-auto" style="max-width: 450px">
+<body class="h-100 d-flex align-items-center flex-column">
+<main class="w-100 p-2 m-auto auth-max-w-fixed">
     <div class="card shadow-lg p-3">
         <div class="card-body">
             <div class="text-center mb-4">
@@ -23,7 +24,7 @@
                 <div class="mb-3">
                     <input type="password" class="form-control" placeholder="Password" required>
                 </div>
-                <div class="mb-3 d-flex align-items-center justify-content-between">
+                <div class="mb-3 d-block d-md-flex align-items-center justify-content-between">
                     <div>
                         <input type="checkbox" class="form-check-input">
                         <label class="form-check-label" >Remember me</label>
@@ -40,6 +41,20 @@
         </div>
     </div>
 </main>
+
+<div class="footer container-fluid py-3 bg-light">
+    <div class="container">
+        <div class="d-block text-center d-md-flex align-items-center justify-content-between">
+            <div class="d-inline-flex">
+                <a class="text-secondary footer-item text-decoration-none me-2" href="#">About</a>
+                <a class="text-secondary footer-item text-decoration-none me-2" href="#">Help</a>
+                <a class="text-secondary footer-item text-decoration-none me-2" href="#">Terms of Use</a>
+                <a class="text-secondary footer-item text-decoration-none me-2" href="#">Privacy Policy</a>
+            </div>
+            <div class="text-secondary footer-item"> © 2022 Problem Fighter</div>
+        </div>
+    </div>
+</div>
 
 <script src="assets/js/libs/bootstrap.bundle.min.5.0.2.js"></script>
 <script src="assets/js/libs/font-awesome.5.15.4.min.js"></script>
