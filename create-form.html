@@ -19,17 +19,20 @@
     <a class="navbar-brand navbar-head col-md-3 col-lg-2  px-3" href="dashboard-new.html">Pf-Bdash</a>
     <div class="dropdown dropdown-menu-end">
         <button type="button" class="btn btn-dark dropdown-toggle  btn-align" data-bs-toggle="dropdown">
-           PF Operator
+            PF Operator
         </button>
         <ul class="dropdown-menu drop-content">
             <li><a class="dropdown-item" href="#"><i class="fas fa-cog me-2"></i>Setting</a></li>
-            <li><a class="dropdown-item" href="change-password.html"><i class="fas fa-lock me-2"></i>Change Password</a></li>
+            <li><a class="dropdown-item" href="change-password.html"><i class="fas fa-lock me-2"></i>Change Password</a>
+            </li>
             <hr class="spaceing">
             <li><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt me-2"></i>Logout </a></li>
         </ul>
     </div>
 
-    <button class="navbar-toggler pf-collapse-nav nav-hight position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler pf-collapse-nav nav-hight position-absolute d-md-none collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+            aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 </header>
@@ -44,11 +47,33 @@
             <div class="position-sticky pt-4">
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="dashboard-table.html">
+                        <a class="nav-link " aria-current="page" href="dashboard-new.html">
                             <i class="fas fa-tachometer-alt"></i>
                             <span data-feather="home"></span>
                             Dashboard
                         </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-after btn-toggle collapsed" data-bs-toggle="collapse"
+                           data-bs-target="#pages-collapse" aria-expanded="true" href="#">
+                           <i class="fas fa-file-word"></i>
+                            <span data-feather="shopping-cart"></span>
+                            Pages
+                        </a>
+
+                        <div class="collapse" id="pages-collapse">
+                            <ul class="ms-4 btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li class="nav-item"><a href="customers.html" class="nav-link rounded"><i
+                                        class="fas fa-clipboard-list me-2"></i>Customers </a></li>
+                                <li class="nav-item"><a href="create-form.html" class="nav-link active rounded"><i
+                                        class="fas fa-align-center me-2"></i>From </a></li>
+                                <li class="nav-item"><a href="details-view.html" class="nav-link rounded"><i
+                                        class="fas fa-info-circle me-2"></i>Details </a></li>
+                                <li class="nav-item"><a href="change-password.html" class="nav-link rounded"><i
+                                        class="fas fa-lock me-2"></i>Change password </a></li>
+                            </ul>
+                        </div>
+
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
@@ -68,33 +93,17 @@
 
                         <div class="collapse" id="home-collapse">
                             <ul class="ms-4 btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                <li class="nav-item"><a href="#" class="nav-link rounded"><i class="fas fa-clipboard-list me-2"></i>Category</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link rounded"><i class="fas fa-calendar-plus me-2"></i>Add Product</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link rounded"><i class="fas fa-layer-group me-2"></i>Stock</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link rounded"><i
+                                        class="fas fa-clipboard-list me-2"></i>Category</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link rounded"><i
+                                        class="fas fa-calendar-plus me-2"></i>Add Product</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link rounded"><i
+                                        class="fas fa-layer-group me-2"></i>Stock</a></li>
                             </ul>
                         </div>
 
                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link dropdown-after btn-toggle collapsed" data-bs-toggle="collapse"
-                           data-bs-target="#pages-collapse" aria-expanded="true" href="#">
-                            <i class="fas fa-file-alt"></i>
-                            <span data-feather="shopping-cart"></span>
-                            Pages
-                        </a>
 
-                        <div class="collapse" id="pages-collapse">
-                            <ul class="ms-4 btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                <li class="nav-item"><a href="customers.html" class="nav-link rounded"><i
-                                        class="fas fa-clipboard-list me-2"></i>Customers table</a></li>
-                                <li class="nav-item"><a href="create-form.html" class="nav-link rounded"><i class="fas fa-align-center me-2"></i>From page</a></li>
-                                <li class="nav-item"><a href="details-view.html" class="nav-link rounded"><i
-                                        class="fas fa-info-circle me-2"></i>Details view</a></li>
-                                 <li class="nav-item"><a href="change-password.html" class="nav-link rounded"><i class="fas fa-lock me-2"></i>Change password </a></li>
-                            </ul>
-                        </div>
-
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
                             <i class="fas fa-list-ul"></i>
@@ -181,13 +190,15 @@
                         <div class="col-md-6">
                             <label class="form-label"><span class="text-danger me-1">*</span>Email</label>
                             <input type="email" class="form-control" aria-describedby="emailHelp" required>
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
                         </div>
 
                         <div class="col-md-6">
                             <label class="form-label"><span class="text-danger me-1">*</span>Password</label>
                             <input type="password" class="form-control" required>
-                            <small id="password" class="form-text text-muted">We'll never share your password with anyone else.</small>
+                            <small id="password" class="form-text text-muted">We'll never share your password with
+                                anyone else.</small>
                         </div>
                         <div class="col-md-6">
                             <label class="form-label"><span class="text-danger me-1">*</span>City</label>
@@ -205,7 +216,8 @@
 
                         <div class="col-md-6">
                             <label class="form-label"><span class="text-danger me-1">*</span>Phone Number</label>
-                            <input class="form-control" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                            <input class="form-control" type="tel" id="phone" name="phone"
+                                   pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                         </div>
 
                         <div class="col-md-6">
@@ -218,7 +230,8 @@
                         </div>
                         <div class="col-md-6">
                             <label class="form-label"><span class="text-danger me-1">*</span>Url</label>
-                            <input type="url" class="form-control" required placeholder="https://wwww.hmtmcse.com" pattern="https://.*">
+                            <input type="url" class="form-control" required placeholder="https://wwww.hmtmcse.com"
+                                   pattern="https://.*">
                         </div>
                         <div class="col-md-6">
                             <label class="form-label"><span class="text-danger me-1">*</span>Week</label>
@@ -241,22 +254,25 @@
                             <p>Select Gender</p>
                             <div class="d-flex">
                                 <div class="form-check me-2">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                           id="flexRadioDefault1">
                                     <label class="form-check-label" for="flexRadioDefault1">Male</label>
                                 </div>
                                 <div class="form-check me-2">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                           id="flexRadioDefault2">
                                     <label class="form-check-label" for="flexRadioDefault2">Female</label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                           id="flexRadioDefault3">
                                     <label class="form-check-label" for="flexRadioDefault3">Common</label>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <label class="form-label"><span class="text-danger me-1">*</span>Color</label> <br>
-                            <input type="color"  required>
+                            <input type="color" required>
                         </div>
                         <div class="col-md-12">
                             <p>Add Comment</p>
@@ -298,27 +314,7 @@
 <script src="assets/js/libs/bootstrap.bundle.min.5.0.2.js"></script>
 <script src="assets/js/libs/font-awesome.5.15.4.min.js"></script>
 
-
-<script>
-(function () {
-    'use strict'
-
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.querySelectorAll('.needs-validation')
-
-    // Loop over them and prevent submission
-    Array.prototype.slice.call(forms)
-        .forEach(function (form) {
-            form.addEventListener('submit', function (event) {
-                if (!form.checkValidity()) {
-                    event.preventDefault()
-                    event.stopPropagation()
-                }
-
-                form.classList.add('was-validated')
-            }, false)
-        })
-})()</script>
+<script src="assets/js/apps/custom.js"></script>
 
 </body>
 </html>
