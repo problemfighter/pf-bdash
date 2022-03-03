@@ -9,6 +9,9 @@ body {
 .pf-fs-72 {
     font-size: 72px;
 }
+.footer-item {
+    font-size: 14px;
+}
 
 @media (max-width: 767px) {
     .footer-item {
@@ -17,6 +20,7 @@ body {
 }
 
 .footer-fixed-bottom {
+    border-top: 1px solid #dfe0e1;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -34,8 +38,4 @@ body {
     .footer-content {
         padding: 5px 0;
     }
-}
-
-.custom-page-height{
-    height: 85vh;
 }
