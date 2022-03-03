@@ -15,9 +15,6 @@ body {
 .sidebar {
     position: fixed;
     top: 0;
-    /* rtl:raw:
-    right: 0;
-    */
     bottom: 0;
     /* rtl:remove */
     left: 0;
@@ -212,4 +209,8 @@ body {
         font-size: 14px;
         margin-bottom: 5px;
     }
+}
+
+.overflow-auto::-webkit-scrollbar {
+  width: 5px;
 }

@@ -4,10 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Create Form </title>
-    <link rel="stylesheet" href="assets/css/lib/all.min.css">
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="assets/css/libs/bootstrap.min.5.0.2.css">
-
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="assets/css/apps/style.css">
 
@@ -16,7 +14,7 @@
 <body>
 <!--===========  start of Header  ==========-->
 <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0.5 shadow justify-content-between">
-    <a class="navbar-brand navbar-head col-md-3 col-lg-2  px-3" href="dashboard-new.html">Pf-Bdash</a>
+    <a class="navbar-brand navbar-head col-md-3 col-lg-2  px-3" href="dashboard.html">PF-BDash</a>
     <div class="dropdown dropdown-menu-end">
         <button type="button" class="btn btn-dark dropdown-toggle  btn-align" data-bs-toggle="dropdown">
             PF Operator
@@ -43,11 +41,11 @@
 <div class="container-fluid">
     <div class="row">
         <!--===========  start of Side-nav  ==========-->
-        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse overflow-auto ">
             <div class="position-sticky pt-4">
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="dashboard-new.html">
+                        <a class="nav-link " aria-current="page" href="dashboard.html">
                             <i class="fas fa-tachometer-alt"></i>
                             <span data-feather="home"></span>
                             Dashboard
@@ -61,13 +59,13 @@
                             Pages
                         </a>
 
-                        <div class="collapse" id="pages-collapse">
+                        <div class="collapse show" id="pages-collapse">
                             <ul class="ms-4 btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                <li class="nav-item"><a href="customers.html" class="nav-link rounded"><i
-                                        class="fas fa-clipboard-list me-2"></i>Customers </a></li>
-                                <li class="nav-item"><a href="create-form.html" class="nav-link active rounded"><i
+                                <li class="nav-item"><a href="table.html" class="nav-link rounded"><i
+                                        class="fas fa-clipboard-list me-2"></i>Table </a></li>
+                                <li class="nav-item"><a href="form.html" class="nav-link active rounded"><i
                                         class="fas fa-align-center me-2"></i>From </a></li>
-                                <li class="nav-item"><a href="details-view.html" class="nav-link rounded"><i
+                                <li class="nav-item"><a href="details.html" class="nav-link rounded"><i
                                         class="fas fa-info-circle me-2"></i>Details </a></li>
                                 <li class="nav-item"><a href="change-password.html" class="nav-link rounded"><i
                                         class="fas fa-lock me-2"></i>Change password </a></li>
@@ -91,7 +89,7 @@
                             Products
                         </a>
 
-                        <div class="collapse" id="home-collapse">
+                        <div class="collapse " id="home-collapse">
                             <ul class="ms-4 btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                 <li class="nav-item"><a href="#" class="nav-link rounded"><i
                                         class="fas fa-clipboard-list me-2"></i>Category</a></li>
@@ -309,6 +307,21 @@
         </main>
     </div>
 </div>
+ <!-- Footer -->
+<footer class="sticky-footer bg-light mt-5 p-3 fixed-bottom">
+    <div class="container my-auto">
+        <div class="d-block text-center d-md-flex align-items-center justify-content-between">
+            <div class="d-inline-flex">
+                <a class="text-secondary footer-item text-decoration-none me-2" href="#">About</a>
+                <a class="text-secondary footer-item text-decoration-none me-2" href="#">Help</a>
+                <a class="text-secondary footer-item text-decoration-none me-2" href="#">Terms of Use</a>
+                <a class="text-secondary footer-item text-decoration-none me-2" href="#">Privacy Policy</a>
+            </div>
+            <div class="text-secondary footer-item"> © 2022 Problem Fighter</div>
+        </div>
+    </div>
+</footer>
+<!-- End of Footer -->
 
 <!--==========Js==============-->
 <script src="assets/js/libs/bootstrap.bundle.min.5.0.2.js"></script>
