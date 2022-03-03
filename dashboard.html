@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard 2</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/libs/bootstrap.min.5.0.2.css">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="assets/css/apps/style.css">
+</head>
+<body>
+<!--===========  start of Header  ==========-->
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0.5 shadow justify-content-between">
+    <a class="navbar-brand navbar-head col-md-3 col-lg-2  px-3" href="dashboard.html">PF-BDash</a>
+    <div class="dropdown dropdown-menu-end">
+        <button type="button" class="btn btn-dark  dropdown-toggle  btn-align" data-bs-toggle="dropdown">
+            PF Operator
+        </button>
+        <ul class="dropdown-menu drop-content">
+            <li>
+                <a class="dropdown-item" href="#">
+                    <i class="fas fa-cog me-2"></i>Setting
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-item" href="change-password.html">
+                    <i class="fas fa-lock me-2"></i>
+                    Change Password
+                </a>
+            </li>
+            <hr class="my-1">
+            <li>
+                <a class="dropdown-item" href="#">
+                    <i class="fas fa-sign-out-alt me-2"></i>
+                    Logout
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <button class="navbar-toggler pf-collapse-nav position-absolute d-md-none collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</header>
+<!--===========  End of Header  ==========-->
+<div class="container-fluid">
+    <div class="row">
+
+        <!--===========  start of Side-nav  ==========-->
+
+        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse overflow-auto">
+            <div class="position-sticky pt-4">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="dashboard.html">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span data-feather="home"></span>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-after btn-toggle collapsed" data-bs-toggle="collapse"
+                           data-bs-target="#pages-collapse" aria-expanded="true" href="#">
+                            <i class="fas fa-file-word"></i>
+                            <span data-feather="shopping-cart"></span>
+                            Pages
+                        </a>
+                        <div class="collapse" id="pages-collapse">
+                            <ul class="ms-4 btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li class="nav-item">
+                                    <a href="table.html" class="nav-link rounded">
+                                        <i class="fas fa-clipboard-list me-2"></i>
+                                        Table
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="form.html" class="nav-link rounded">
+                                        <i class="fas fa-align-center me-2"></i>
+                                        From
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="details.html" class="nav-link rounded">
+                                        <i class="fas fa-info-circle me-2"></i>
+                                        Details
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="change-password.html" class="nav-link rounded">
+                                        <i class="fas fa-lock me-2"></i>
+                                        Change password
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-shopping-bag"></i>
+                            Orders
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-after btn-toggle collapsed" data-bs-toggle="collapse"
+                           data-bs-target="#home-collapse" aria-expanded="true" href="#">
+                            <i class="fab fa-product-hunt"></i>
+                            Products
+                        </a>
+
+                        <div class="collapse" id="home-collapse">
+                            <ul class="ms-4 btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link rounded">
+                                        <i class="fas fa-clipboard-list me-2"></i>
+                                        Category
+                                    </a>
+                                </li>
+                                <li class="nav-item"><a href="#" class="nav-link rounded">
+                                    <i class="fas fa-calendar-plus me-2"></i>
+                                    Add Product
+                                </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link rounded">
+                                        <i class="fas fa-layer-group me-2"></i>
+                                        Stock
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-list-ul"></i>
+                            Customers
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-file-alt"></i>
+                            Reports
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-network-wired"></i>
+                            Integrations
+                        </a>
+                    </li>
+                </ul>
+
+                <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Saved reports</span>
+                </h6>
+                <ul class="nav flex-column mb-2">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-calendar-check"></i>
+                            Current month
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-handshake"></i>
+                            Social engagement
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-tag"></i>
+                            Year-end sale
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--===========  End of Side-nav  ==========-->
+        <!--===========  start of Dashboard  ==========-->
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <!--===========  start of Dashbord header  ==========-->
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                <h2>Dashboard</h2>
+                <div>
+                    <button type="button" class="btn btn-primary btn-color">
+                        <i class="fas fa-list me-1 text-clr "></i>
+                        Customer
+                    </button>
+                    <button type="button" class="btn btn-primary btn-color">
+                        <i class="fab fa-product-hunt me-1 text-clr"></i>
+                        Product
+                    </button>
+                    <button type="button" class="btn btn-primary btn-color">
+                        <i class="fas fa-shopping-bag me-1 text-clr"></i>
+                        Order
+                    </button>
+                </div>
+            </div>
+            <!--===========  End of Dashbord header  ==========-->
+
+            <!--====start of dashboard element=====-->
+            <div class="row mt-4 ">
+                <div class="col-md-3 mb-4">
+                    <div class="card shadow py-2">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col mr-2">
+                                    <div class="fw-bold text-danger text-uppercase mb-1">
+                                        Earnings (Annual)
+                                    </div>
+                                    <div class="h5 mb-0 font-weight-bold ">$215,000</div>
+                                </div>
+                                <div class="col-auto">
+                                    <i class="fas fa-dollar-sign fa-2x text-secondary"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card shadow py-2">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col mr-2">
+                                    <div class="fw-bold text-success text-uppercase mb-1">
+                                        Earnings (monthly)
+                                    </div>
+                                    <div class="h5 mb-0 font-weight-bold ">$40,000</div>
+                                </div>
+                                <div class="col-auto">
+                                    <i class="fas fa-calendar fa-2x text-secondary"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card shadow py-2">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col mr-2">
+                                    <div class="fw-bold text-info text-uppercase mb-1">
+                                        Task
+                                    </div>
+                                    <div class="h5 mb-0 font-weight-bold ">70%</div>
+                                </div>
+                                <div class="col-auto">
+                                    <i class="fas fa-tasks fa-2x text-secondary"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card shadow py-2">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col mr-2">
+                                    <div class="fw-bold text-warning text-uppercase mb-1">
+                                        PENDING REQUESTS
+                                    </div>
+                                    <div class="h5 mb-0 font-weight-bold ">1050</div>
+                                </div>
+                                <div class="col-auto">
+                                    <i class="fas fa-comments fa-2x text-secondary"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--====end of dashboard element=====-->
+
+            <!--====start of dashboard item=====-->
+            <div class="row  mt-4 mb-5 g-3">
+                <div class="col-md-6">
+                    <div class="card shadow">
+                        <div class="card-header fw-bold text-uppercase text-primary">
+                            Progress
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <p class="mb-2">Server Migration</p>
+                                <p class="mb-2">20%</p>
+                            </div>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 20%"
+                                     aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="mb-2">Sales Tracking</p>
+                                <p class="mb-2">40%</p>
+                            </div>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 40%"
+                                     aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="d-flex justify-content-between ">
+                                <p class="mb-2">Customer Database</p>
+                                <p class="mb-2">60%</p>
+                            </div>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width:60%"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="d-flex justify-content-between ">
+                                <p class="mb-2">Payout Details</p>
+                                <p class="mb-2">80%</p>
+                            </div>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%"
+                                     aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="d-flex justify-content-between ">
+                                <p class="mb-2">Server Migration</p>
+                                <p class="mb-2">100%</p>
+                            </div>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card shadow">
+                        <div class="card-header fw-bold text-uppercase text-primary">
+                            Development Approach
+                        </div>
+                        <div class="card-body">
+                            <p>Add some quality, svg illustrations to your project courtesy of unDraw, a constantly
+                                updated collection of beautiful svg images that you can use completely free and without
+                                attribution!dustry. Lorem Ipsum has been the industry's standard dummy text ever since
+                                the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                                specimen book. It has survived not only five centuries, but also the leap into
+                                electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                                with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                                remaining essentially unchanged. It was popularised in the 1960s with the release of
+                                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                                publishing software like Aldus PageMaker including versions of Lorem Ipsum desktop
+                                publishing software like Aldus PageMaker desktop publishing software like Aldus
+                                PageMaker including versions of Lorem
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+<!-- Footer -->
+<footer class="sticky-footer bg-light mt-5  footer-fixed-bottom">
+    <div class="container-fluid footer-content">
+        <div class="d-block text-center d-md-flex align-items-center justify-content-between">
+            <div class="d-inline-flex">
+                <a class="text-secondary footer-item text-decoration-none me-2" href="#">About</a>
+                <a class="text-secondary footer-item text-decoration-none me-2" href="#">Help</a>
+                <a class="text-secondary footer-item text-decoration-none me-2" href="#">Terms of Use</a>
+                <a class="text-secondary footer-item text-decoration-none me-2" href="#">Privacy Policy</a>
+            </div>
+            <div class="text-secondary footer-item"> © 2022 Problem Fighter</div>
+        </div>
+    </div>
+</footer>
+<!-- End of Footer -->
+<!--==========Js==============-->
+<script src="assets/js/libs/bootstrap.bundle.min.5.0.2.js"></script>
+<script src="assets/js/libs/font-awesome.5.15.4.min.js"></script>
+
+</body>
+</html>
+
+
