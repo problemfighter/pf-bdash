@@ -221,3 +221,6 @@ body {
         font-size: 12px;
     }
 }
+.custom-page-height{
+    height:calc(100vh - 115px);
+}
