@@ -7,26 +7,39 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="assets/css/libs/bootstrap.min.5.0.2.css">
     <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/apps/style.css">
 </head>
 <body>
 <!--===========  start of Header  ==========-->
 <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0.5 shadow justify-content-between">
-    <a class="navbar-brand navbar-head col-md-3 col-lg-2  px-3" href="#">PF-BDash</a>
+    <a class="navbar-brand navbar-head col-md-3 col-lg-2  px-3" href="dashboard.html">PF-BDash</a>
     <div class="dropdown dropdown-menu-end">
-        <button type="button" class="btn btn-dark dropdown-toggle  btn-align" data-bs-toggle="dropdown">
+        <button type="button" class="btn btn-dark  dropdown-toggle  btn-align" data-bs-toggle="dropdown">
             PF Operator
         </button>
         <ul class="dropdown-menu drop-content">
-            <li><a class="dropdown-item" href="#"><i class="fas fa-cog me-2"></i>Setting</a></li>
-            <li><a class="dropdown-item" href="change-password.html"><i class="fas fa-lock me-2"></i>Change Password</a>
+            <li>
+                <a class="dropdown-item" href="#">
+                    <i class="fas fa-cog me-2"></i>Setting
+                </a>
             </li>
-            <hr class="spaceing">
-            <li><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt me-2"></i>Logout </a></li>
+            <li>
+                <a class="dropdown-item" href="change-password.html">
+                    <i class="fas fa-lock me-2"></i>
+                    Change Password
+                </a>
+            </li>
+            <hr class="my-1">
+            <li>
+                <a class="dropdown-item" href="#">
+                    <i class="fas fa-sign-out-alt me-2"></i>
+                    Logout
+                </a>
+            </li>
         </ul>
     </div>
 
-    <button class="navbar-toggler pf-collapse-nav nav-hight position-absolute d-md-none collapsed" type="button"
+    <button class="navbar-toggler pf-collapse-nav position-absolute d-md-none collapsed" type="button"
             data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
             aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -38,87 +51,101 @@
 
         <!--===========  start of Side-nav  ==========-->
 
-        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse overflow-auto">
             <div class="position-sticky pt-4">
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">
+                        <a class="nav-link" aria-current="page" href="dashboard.html">
                             <i class="fas fa-tachometer-alt"></i>
-                            <span data-feather="home"></span>
                             Dashboard
                         </a>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link dropdown-after btn-toggle collapsed" data-bs-toggle="collapse"
                            data-bs-target="#pages-collapse" aria-expanded="true" href="#">
                             <i class="fas fa-file-word"></i>
-                            <span data-feather="shopping-cart"></span>
                             Pages
                         </a>
-
                         <div class="collapse" id="pages-collapse">
                             <ul class="ms-4 btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                <li class="nav-item"><a href="customers.html" class="nav-link rounded"><i
-                                        class="fas fa-clipboard-list me-2"></i>Table </a></li>
-                                <li class="nav-item"><a href="create-form.html" class="nav-link rounded"><i
-                                        class="fas fa-align-center me-2"></i>From </a></li>
-                                <li class="nav-item"><a href="details-view.html" class="nav-link rounded"><i
-                                        class="fas fa-info-circle me-2"></i>Details </a></li>
-                                <li class="nav-item"><a href="change-password.html" class="nav-link rounded"><i
-                                        class="fas fa-lock me-2"></i>Change password </a></li>
+                                <li class="nav-item">
+                                    <a href="table.html" class="nav-link rounded">
+                                        <i class="fas fa-clipboard-list me-2"></i>
+                                        Table
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="form.html" class="nav-link rounded">
+                                        <i class="fas fa-align-center me-2"></i>
+                                        From
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="details.html" class="nav-link rounded">
+                                        <i class="fas fa-info-circle me-2"></i>
+                                        Details
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="change-password.html" class="nav-link rounded">
+                                        <i class="fas fa-lock me-2"></i>
+                                        Change password
+                                    </a>
+                                </li>
                             </ul>
                         </div>
-
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
                             <i class="fas fa-shopping-bag"></i>
-                            <span data-feather="file"></span>
                             Orders
                         </a>
                     </li>
-
-
                     <li class="nav-item">
                         <a class="nav-link dropdown-after btn-toggle collapsed" data-bs-toggle="collapse"
                            data-bs-target="#home-collapse" aria-expanded="true" href="#">
                             <i class="fab fa-product-hunt"></i>
-                            <span data-feather="shopping-cart"></span>
                             Products
                         </a>
 
                         <div class="collapse" id="home-collapse">
                             <ul class="ms-4 btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                <li class="nav-item"><a href="#" class="nav-link rounded"><i
-                                        class="fas fa-clipboard-list me-2"></i>Category</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link rounded"><i
-                                        class="fas fa-calendar-plus me-2"></i>Add Product</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link rounded"><i
-                                        class="fas fa-layer-group me-2"></i>Stock</a></li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link rounded">
+                                        <i class="fas fa-clipboard-list me-2"></i>
+                                        Category
+                                    </a>
+                                </li>
+                                <li class="nav-item"><a href="#" class="nav-link rounded">
+                                    <i class="fas fa-calendar-plus me-2"></i>
+                                    Add Product
+                                </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link rounded">
+                                        <i class="fas fa-layer-group me-2"></i>
+                                        Stock
+                                    </a>
+                                </li>
                             </ul>
                         </div>
-
                     </li>
 
                     <li class="nav-item">
                         <a class="nav-link" href="#">
                             <i class="fas fa-list-ul"></i>
-                            <span data-feather="users"></span>
                             Customers
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
                             <i class="fas fa-file-alt"></i>
-                            <span data-feather="bar-chart-2"></span>
                             Reports
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
                             <i class="fas fa-network-wired"></i>
-                            <span data-feather="layers"></span>
                             Integrations
                         </a>
                     </li>
@@ -126,30 +153,23 @@
 
                 <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
                     <span>Saved reports</span>
-                    <a class="link-secondary" href="#" aria-label="Add a new report">
-                        <span data-feather="plus-circle"></span>
-                    </a>
                 </h6>
                 <ul class="nav flex-column mb-2">
                     <li class="nav-item">
                         <a class="nav-link" href="#">
                             <i class="fas fa-calendar-check"></i>
-                            <span data-feather="file-text"></span>
                             Current month
                         </a>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link" href="#">
                             <i class="fas fa-handshake"></i>
-                            <span data-feather="file-text"></span>
                             Social engagement
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
                             <i class="fas fa-tag"></i>
-                            <span data-feather="file-text"></span>
                             Year-end sale
                         </a>
                     </li>
